@@ -162,7 +162,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 const SizedBox(height: 20),
 
-                // 🔹 Divider "atau"
                 Row(
                   children: [
                     const Expanded(child: Divider(color: Colors.white)),
@@ -179,7 +178,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 const SizedBox(height: 20),
 
-                // 🔹 Tombol Google
                 OutlinedButton.icon(
                   onPressed: () {},
                   style: OutlinedButton.styleFrom(
@@ -208,7 +206,6 @@ class _RegisterPageState extends State<RegisterPage> {
 
                 const SizedBox(height: 20),
 
-                // 🔹 Sudah punya akun?
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

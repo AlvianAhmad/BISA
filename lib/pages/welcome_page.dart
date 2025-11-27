@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'login_page.dart';
-import 'register_page.dart';
+import 'auth/login_page.dart';
+import 'auth/register_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -9,24 +9,24 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFEFF8FF), // biru muda Edura
+      backgroundColor: const Color(0xFF003182),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              const SizedBox(height: 40),
+        child: Column(
+          children: [
+            const SizedBox(height: 40),
 
-              // Gambar utama
-              Image.asset(
-                'assets/images/alvian.jpg', // pastikan file ada
-                height: 320,
-                fit: BoxFit.contain,
-              ),
+            // Gambar utama
+            Image.asset(
+              'assets/images/bisaa.png',
+              height: 250,
+              fit: BoxFit.contain,
+            ),
 
-              const SizedBox(height: 20),
+            const SizedBox(height: 20),
 
-              // Container putih di bawah
-              Container(
+            // Ini bagian putihnya
+            Expanded(
+              child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(
                   horizontal: 24,
@@ -47,6 +47,7 @@ class WelcomePage extends StatelessWidget {
                   ],
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "Learning Management System\nOur Universitas Pakuan",
@@ -54,7 +55,7 @@ class WelcomePage extends StatelessWidget {
                       style: GoogleFonts.poppins(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: const Color(0xFF002F6C), // biru tua Edura
+                        color: Color(0xFF1B5094),
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -63,7 +64,7 @@ class WelcomePage extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         fontSize: 13,
-                        color: Colors.grey[500],
+                        color: Colors.grey,
                         height: 1.5,
                       ),
                     ),
@@ -82,9 +83,7 @@ class WelcomePage extends StatelessWidget {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(
-                            0xFF002F6C,
-                          ), // biru tua Edura
+                          backgroundColor: Color(0xFF002F6C),
                           padding: const EdgeInsets.symmetric(vertical: 14),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
@@ -131,7 +130,7 @@ class WelcomePage extends StatelessWidget {
                           style: GoogleFonts.poppins(
                             fontSize: 16,
                             fontWeight: FontWeight.w500,
-                            color: const Color(0xFF002F6C),
+                            color: Color(0xFF002F6C),
                           ),
                         ),
                       ),
@@ -139,8 +138,8 @@ class WelcomePage extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

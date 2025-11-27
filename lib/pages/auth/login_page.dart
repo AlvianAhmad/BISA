@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'register_page.dart';
 import 'forgot_password_page.dart';
-import 'package:edura/user/dashboard_user.dart'; // 🔹 Tambahkan ini
+import 'package:edura/user/dashboard_user.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
